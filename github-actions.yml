@@ -1,9 +1,11 @@
 name: Exercice 1
-on: [push]
+on:
+  push:
+    branches:
+      -develop
 
 jobs: 
   Lancer-echo: 
-    if: github.ref == 'refs/heads/develop'
     runs-on: unbuntu-latest
     steps: 
     - name: echo 1
