@@ -1,11 +1,12 @@
 name: Exercice 1
-on:
-  push:
-    branches:
-      - develop
+on: [push]
 
 jobs: 
   Lancer-echo: 
+    on:
+      push:
+        branches:
+          - develop
     runs-on: unbuntu-latest
     steps: 
     - name: echo 1
