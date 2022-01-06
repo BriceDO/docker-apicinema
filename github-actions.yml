@@ -2,7 +2,7 @@ name: Exercice 1
 on:
   push:
     branches:
-      -develop
+      - develop
 
 jobs: 
   Lancer-echo: 
